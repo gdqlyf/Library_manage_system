@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB91ABEF-3132-4CED-B199-8DEAF9E446B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>lib_project</RootNamespace>
+    <AssemblyName>lib_project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control_guihuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_guihuan.designer.cs">
+      <DependentUpon>Control_guihuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBControl.cs" />
+    <Compile Include="EncryptDES.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lend.cs" />
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_in.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiangxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiangxi.designer.cs">
+      <DependentUpon>xiangxi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Control_guihuan.resx">
+      <DependentUpon>Control_guihuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiangxi.resx">
+      <DependentUpon>xiangxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrond1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\管理员登录2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户登录1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\登录2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\注销2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SkypeApp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_heard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_pict.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_heard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geren2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuji2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\个人信息1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\个人管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\书籍.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\书籍借阅2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\书籍归还2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\书籍查询1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\书籍荐购2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查询2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\白.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\违章缴费2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

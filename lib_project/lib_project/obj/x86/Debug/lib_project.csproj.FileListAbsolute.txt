@@ -1,8 +1,0 @@
-C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\bin\Debug\lib_project.exe
-C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\bin\Debug\lib_project.pdb
-C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj\x86\Debug\lib_project.Form1.resources
-C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj\x86\Debug\lib_project.Properties.Resources.resources
-C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj\x86\Debug\lib_project.csproj.GenerateResource.Cache
-C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj\x86\Debug\lib_project.exe
-C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj\x86\Debug\lib_project.pdb
-C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj\x86\Debug\lib_project.Form2.resources
