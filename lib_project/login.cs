@@ -13,6 +13,7 @@ namespace lib_project
     {
         Point mouseOff;//鼠标移动位置变量
         bool leftFlag;//标签是否为左键
+        public string deskey = "asdfghjkl"; //加密密钥
         public login()
         {
             InitializeComponent();
@@ -48,20 +49,20 @@ namespace lib_project
 
         private void loginbox_Click(object sender, EventArgs e)
         {
-            string encryptpasswd = EncryptDES.strEncryptDES("DES",password.Text.Trim());
+            string encryptpasswd = EncryptDES.strEncryptDES(password.Text.Trim(),deskey);
             bool isUserLogin = Login_in.Userlogin(id.Text.Trim(), encryptpasswd);
             char isAdminLogin = Login_in.Managelogin(id.Text.Trim(), encryptpasswd);
             if (isUser == 1)
             {
                 if (isUserLogin == true)
                 {
-                    Form2 form2 = new Form2();
-                    Form2.ID = id.Text.Trim();
-                    Form2.name = "DSDSD";
+                    MainUsers form2 = new MainUsers();
+                    MainUsers.ID = id.Text.Trim();
+                    MainUsers.name = "DSDSD";
                     form2.Show();
                 }
                 else
-                    MessageBox.Show("没有此用户或用户错误", "提示");
+                    MessageBox.Show("没有此用户或用户密码错误", "提示");
             }
             else
             {
@@ -69,6 +70,16 @@ namespace lib_project
                 {
 
                 }
+                else if(isAdminLogin == (char)2)
+                {
+
+                }
+                else if(isAdminLogin == (char)3)
+                {
+
+                }
+                else
+                    MessageBox.Show("没有此管理员或管理员密码错误", "提示");
             }
         }
 

@@ -10,3 +10,15 @@ C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj
 C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj\x86\Debug\lib_project.Form2.resources
 C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj\x86\Debug\lib_project.xiangxi.resources
 C:\Users\dong\Documents\GitHub\Library_manage_system\lib_project\lib_project\obj\x86\Debug\lib_project.Control_jieyue.resources
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.exe
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.pdb
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.csprojResolveAssemblyReference.cache
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.Control_guihuan.resources
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.login.resources
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.Properties.Resources.resources
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.Control_jieyue.resources
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.xiangxi.resources
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.csproj.GenerateResource.Cache
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\bin\Debug\lib_project.exe
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\bin\Debug\lib_project.pdb
+C:\Users\guo\Documents\GitHub\Library_manage_system\lib_project\obj\x86\Debug\lib_project.MainUsers.resources
