@@ -15,7 +15,7 @@ namespace lib_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainUsers());
+            Application.Run(new login());
         }
     }
 }

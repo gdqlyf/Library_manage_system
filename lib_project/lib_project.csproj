@@ -13,6 +13,21 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -46,49 +61,103 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Control_guihuan.cs">
+    <Compile Include="BLL\Admin.cs" />
+    <Compile Include="BLL\Books.cs" />
+    <Compile Include="UI\super.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\super.designer.cs">
+      <DependentUpon>super.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Book_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Book_manage.designer.cs">
+      <DependentUpon>Book_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Recommend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Recommend.Designer.cs">
+      <DependentUpon>Recommend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DESTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DESTest.Designer.cs">
+      <DependentUpon>DESTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReturnBook.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_guihuan.designer.cs">
-      <DependentUpon>Control_guihuan.cs</DependentUpon>
+    <Compile Include="UI\ReturnBook.designer.cs">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="DBControl.cs" />
-    <Compile Include="EncryptDES.cs" />
-    <Compile Include="MainUsers.cs">
+    <Compile Include="DAL\DBControl.cs" />
+    <Compile Include="BLL\EncryptDES.cs" />
+    <Compile Include="UI\MainUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainUsers.designer.cs">
+    <Compile Include="UI\MainUsers.designer.cs">
       <DependentUpon>MainUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lend.cs" />
-    <Compile Include="login.cs">
+    <Compile Include="BLL\Lend.cs" />
+    <Compile Include="UI\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
+    <Compile Include="UI\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login_in.cs" />
+    <Compile Include="BLL\Login_in.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl2.cs">
+    <Compile Include="UI\SimpleBook.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl2.designer.cs">
-      <DependentUpon>UserControl2.cs</DependentUpon>
+    <Compile Include="UI\SimpleBook.designer.cs">
+      <DependentUpon>SimpleBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="xiangxi.cs">
+    <Compile Include="UI\xiangxi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="xiangxi.designer.cs">
+    <Compile Include="UI\xiangxi.designer.cs">
       <DependentUpon>xiangxi.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Control_guihuan.resx">
-      <DependentUpon>Control_guihuan.cs</DependentUpon>
+    <Compile Include="BLL\Users.cs" />
+    <Compile Include="UI\User_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\User_manage.designer.cs">
+      <DependentUpon>User_manage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\super.resx">
+      <DependentUpon>super.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainUsers.resx">
+    <EmbeddedResource Include="UI\Book_manage.resx">
+      <DependentUpon>Book_manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DESTest.resx">
+      <DependentUpon>DESTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Recommend.resx">
+      <DependentUpon>Recommend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReturnBook.resx">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainUsers.resx">
       <DependentUpon>MainUsers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
+    <EmbeddedResource Include="UI\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -96,11 +165,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl2.resx">
-      <DependentUpon>UserControl2.cs</DependentUpon>
+    <EmbeddedResource Include="UI\SimpleBook.resx">
+      <DependentUpon>SimpleBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="xiangxi.resx">
+    <EmbeddedResource Include="UI\xiangxi.resx">
       <DependentUpon>xiangxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\User_manage.resx">
+      <DependentUpon>User_manage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,88 +190,57 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user.png" />
+    <Content Include="Resources\backgrond1.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\exit1.png" />
+    <Content Include="Resources\geren2.png" />
+    <Content Include="Resources\right_heard.png" />
+    <Content Include="Resources\shuji2.png" />
+    <Content Include="Resources\sidbar.png" />
+    <Content Include="Resources\SkypeApp.png" />
+    <Content Include="Resources\textbox.png" />
+    <Content Include="Resources\user.png" />
+    <Content Include="Resources\user_back.png" />
+    <Content Include="Resources\user_heard.png" />
+    <Content Include="Resources\user_pict.png" />
+    <Content Include="Resources\个人信息1.png" />
+    <Content Include="Resources\个人管理.png" />
+    <Content Include="Resources\书籍.png" />
+    <Content Include="Resources\书籍借阅2.png" />
+    <Content Include="Resources\书籍归还2.png" />
+    <Content Include="Resources\书籍查询1.png" />
+    <Content Include="Resources\书籍荐购2.png" />
+    <Content Include="Resources\搜索1.png" />
+    <Content Include="Resources\查询2.png" />
+    <Content Include="Resources\注销2.png" />
+    <Content Include="Resources\用户帮助.png" />
+    <Content Include="Resources\用户登录1.png" />
+    <Content Include="Resources\登录2.png" />
+    <Content Include="Resources\白.png" />
+    <Content Include="Resources\管理员登录2.png" />
+    <Content Include="Resources\违章缴费2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user_back.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\textbox.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backgrond1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exit1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\管理员登录2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\用户登录1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\登录2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\注销2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SkypeApp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user_heard.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sidbar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user_pict.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\right_heard.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\geren2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shuji2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\个人信息1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\个人管理.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\书籍.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\书籍借阅2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\书籍归还2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\书籍查询1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\书籍荐购2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\搜索1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\查询2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\白.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\违章缴费2.png" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

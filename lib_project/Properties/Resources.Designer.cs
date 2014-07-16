@@ -433,6 +433,16 @@ namespace lib_project.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 用户帮助 {
+            get {
+                object obj = ResourceManager.GetObject("用户帮助", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 用户登录1 {
             get {
                 object obj = ResourceManager.GetObject("用户登录1", resourceCulture);
